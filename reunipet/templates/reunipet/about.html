@@ -1,0 +1,11 @@
+{% extends 'reunipet/base_with_navbar.html' %}
+
+{% block content %}
+    <h1>{{request.resolver_match.url_name}}</h1>
+    {% if request.resolver_match.url_name == 'about'  %}
+        <h2>TRUE</h2>
+    {%else%}
+        <h2>False</h2>
+    {%endif%}
+    <h1></h1>
+{% endblock %}
